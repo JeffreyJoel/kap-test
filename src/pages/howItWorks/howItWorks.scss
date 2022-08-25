@@ -1,0 +1,185 @@
+@import '../../config/styles/variables';
+
+    .HowItWorks {
+        font-family: "kap-firma-rg";
+        width: 100%;
+        &__header {
+            display: flex;
+            align-items: center;
+            padding:4vw 3vw;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            gap: 30px;
+            position: sticky;
+            top: 0;
+            background-color: #FFFFFF;
+            z-index: 10;
+            justify-content: space-between;
+            width: 100vw;
+        }
+
+        &__body {
+            &__top {
+                width: 100%;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .text {
+                    position: absolute;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 38px;
+                    color: #06335B;
+                    top: 15vh;
+                    // left: 23%;
+                    // right: auto;
+                    text-align: center;
+                    width: 100%;
+                    p {
+                        font-family: "kap-firma";
+                    }
+                   
+                }
+            }
+
+            &__mid {
+                .text {
+                    text-align: center;
+                    color: #000000;
+                    padding: 3vh 5vw;
+
+                    p {
+                        font-family: "kap-firma";
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 31px;
+                    }
+                }
+            }
+
+            &__img {
+                // width: 75%;
+                display: flex;
+              .BorderCorner{
+                padding: 2vh 3vw;
+                border: 2px dashed #06335B;
+                // transform: rotateY(180deg);
+                display: inline-block;
+                // length:0px;
+                box-sizing: border-box;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 100%;
+                border-top-left-radius: 100%;
+                position: relative;
+                // margin-left:25%;
+                margin: 3.5vh auto;
+                // display: blo
+                img {
+                    display: block;
+                    margin: auto;
+                    position: relative;
+                    z-index: 5;
+                    // transform: rotateZ(-90deg);
+                }
+              }
+              .BorderCorner::before,  .BorderCorner::after{
+                content: "";
+                position: absolute;
+                background: #fff;
+              }
+              .BorderCorner::before{
+                  width: calc(100% + 50px + 4px - 120px);
+                  height: calc(100% + 4px);
+                  top: -2px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  z-index: 1;
+              }
+              .BorderCorner::after{
+                height: calc(100% + 50px + 4px - 120px);
+                width: calc(100% + 4px);
+                top: 50%;
+                left: -2px;
+                transform: translateY(-50%);
+                z-index: 1;
+            }
+
+                
+            }
+
+            &__final {
+                margin: 1vh 5vw;
+
+                div {
+
+                    .header,
+                    .text {
+                        display: flex;
+                        gap: 5vw;
+                        margin-top: 20px;
+                        color: #1F1F1F;
+                    }
+
+                    .header {
+
+                        p,
+                        span {
+                            font-family: "kap-firma";
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 28px;
+                        }
+
+                        span {
+                            color: #06335B;
+                        }
+                    }
+
+                    .text {
+                        p {
+                            margin: auto;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 23px;
+                            font-family: "kap-firma-rg";
+                        }
+                        img{
+                            margin-top: 10px;
+                        }
+                        .double-text {
+                            p {
+                                margin-bottom: 3vh;
+                            }
+                        }
+                    }
+                }
+                // .third{
+                //     .text{
+                //         img{
+                //             height: 122px;
+                //         }
+                //     }
+                // }
+                &__btn{
+                    width: 180px;
+                    height: 61px;
+                    background: #06335B;
+                    border-radius: 5px;
+                    margin: 25px auto;
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                    border: none;
+                    position: static;
+                    display: block;
+                }
+            }
+            // .white-one{
+
+            // }
+
+
+        }
+    }

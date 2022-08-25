@@ -1,0 +1,71 @@
+@import '../../config/styles/variables';
+
+@media only screen and (max-width: 900px) {
+
+}
+
+.Privacy {
+    
+    color: #000;
+    &_Policy{
+        padding: 7vw 4.5vw 10vh 5vw;
+        *{
+        font-family: 'kap-firma-md';
+        font-style: normal;
+        font-size: 17px;
+        line-height: 21.37px;
+        font-weight: 400;
+        margin: 0;
+    }
+    }
+    &_Header{
+        font-family: 'kap-firma-md';
+        margin-bottom: 28px
+    }
+    .Main_Header {
+        // align-items: center;
+        font-size: 22px;
+        line-height: 27.65px;
+        font-weight: 600;
+        
+    }
+    .Minor_Header {
+        font-size: 20px;
+        line-height: 25.14px;
+        font-weight: 600;
+        padding-top: 26px;
+        padding-bottom: 2vw;
+    }
+    .Sub_Header {
+        font-size: 17px;
+        line-height: 21.37px;
+        font-weight: 600;
+        padding-top: 26px;
+        padding-bottom: 2vw;
+    }
+    a{
+        font-weight: 100;
+        color: #7fd6b2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    ul{
+        padding-left: 4vw;
+        // list-style-type: none;
+    }
+    li{
+        padding-bottom: 2vw;
+    }
+    .Cookie_Header{
+        padding-top: 0px;
+    }
+    .indent{
+        padding-top: 26px
+    }
+    .pb{
+        padding-bottom: 13px;
+    }
+}
+.Cookie {
+    word-wrap: break-word;
+}

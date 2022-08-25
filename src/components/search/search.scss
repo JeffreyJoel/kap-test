@@ -1,0 +1,26 @@
+.Search {
+    background-color: #06335B;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    height: 37px;
+    border: 1px solid #CACACA;
+    margin: 9px 7vw;
+
+    img {
+        margin: 0 10px;
+    }
+
+    input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: 'kap-firma-rg';
+        font-weight: 400;
+        color: #404040;
+        padding-left: 9px;
+    }
+}

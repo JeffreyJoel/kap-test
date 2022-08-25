@@ -1,0 +1,23 @@
+.Connect{
+    &_body{
+       margin-top: 25%;
+        
+        
+        &_user{
+            position: absolute;
+            right: 26px;
+            top: 87px;
+        }
+        .cartoon{
+            margin: auto;
+            display: block;
+        }
+        &_text{
+            font-family: 'kap-firma-bd';
+            font-size: 28px;
+            line-height: 33px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    }
+}

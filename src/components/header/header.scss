@@ -1,0 +1,209 @@
+@media only screen and (max-width: 999px) {
+    a{
+        text-decoration: none;
+    }
+    .Header{
+        // width: 100%;
+        // padding: 3vh 5vw;
+        // display: flex;
+        // position: fixed;
+        // top: 0;
+        // background-color: #FFFFFF;
+        // box-shadow: 0px -10px 20px #707070;
+        // z-index: 300;
+        .viewport{
+            width: 100%;
+            padding: 3vh 5vw;
+            display: flex;
+            position: fixed;
+            top: 0;
+            background-color: #FFFFFF;
+            box-shadow: 0px -10px 20px #707070;
+            z-index: 300;
+            height: inherit;
+            .regHeaderLogo{
+                display: block;
+            }
+            .waitlistHeaderLogo{
+                display: none;
+            }
+            // padding: ;
+            .header{
+                padding: 0;
+                position: static;
+                .menuicon__bar{
+                    stroke: #000000;
+                }
+            }
+          }
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            &__logo{
+                z-index: 300;
+            }
+        }
+    };
+    .bs{
+        box-shadow: 0px -10px 20px #707070;
+        position: sticky;
+        top: 0;
+        z-index: 200;
+        background-color: #FFFFFF;
+    }
+    .Header__home{
+        width: 100%;
+        padding:5vw 5vw 3vw;
+        display: flex;
+        top: 0;
+        background-color: #FFFFFF;
+        position: relative;
+        .Header-lg{
+            display: none;
+        }
+        
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 21px;
+            span{
+                color: #070F1C;
+                font-family: "kap-firma-md";
+            }
+            
+        }
+    }
+    .Header-lg{
+        display: none;
+    }
+    // .nav{
+    //     display: none;
+    // }
+}
+
+.Nav {
+    display: none;
+    padding: 17px;
+    background-color: #06335B;
+    &__main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 96px;
+        z-index: 300;
+    }
+    .menuBar-Dark{
+        display: none;
+    }
+    .menuBar-White {
+        display: block;
+    }
+
+    &__links {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .Header, .Header__home__menu,.navigation,.navigation *,.navigation__background, .navigation__button {
+        display: none !important;
+    }
+    
+    .Header-lg {
+        position: fixed;
+        top:0;
+        width: 100%;
+        background-color: #FFFFFF;
+        z-index: 300;
+        margin-top: 0;
+        &__main{
+            padding: 36px 30px;
+            display: flex;
+            justify-content: space-between;
+            .menuBar {
+                display: none;
+            }
+    
+            .Header-lg__links {
+                display: flex;
+                gap: 28px;
+                span, a, p {
+                    font-family: 'kap-firma-md';
+                    text-decoration: none;
+                    color: #000000 !important;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 23px;
+                    cursor: pointer;
+                }
+                p{
+                    display: flex;
+                    gap: 7px;
+                    align-items: center;
+                    img{
+                        width: 7px;
+                    }
+                    svg{
+                        width: 7px;
+                    }
+                }
+            }
+        }
+      
+    }
+    .Nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        padding: 36px 30px;
+        // margin-bottom: 76px;
+        background-color: transparent;
+        width: 100%;
+        z-index: 300;
+        &__main {
+            display: flex;
+            justify-content: space-between;
+        }
+        .menuBar {
+            display: none !important;
+        }
+    
+        &__links {
+            display: flex;
+            gap: 28px;
+    
+    
+            a,p {
+                font-family: 'kap-firma-md';
+                text-decoration: none;
+                color: white;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                cursor: pointer;
+            }
+            p{
+                display: flex;
+                gap: 7px;
+                img{
+                    width: 7px;
+                }
+            }
+        }
+    }
+    
+}

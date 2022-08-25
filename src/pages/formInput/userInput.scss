@@ -1,0 +1,154 @@
+@import '../../config/styles/variables';
+
+
+
+.UserInput{
+    &_Body{
+        margin: 7vw 5vw 10vh 5vw;
+        *{
+            font-family: 'kap-firma-md';
+            font-style: normal;
+        }
+    }
+    &_TextHeading{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        padding-bottom: 11px;
+    }
+    &_text{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18.85px;
+
+    }
+    &_pointer{
+      margin-left: 5px;
+      margin-right: 3px;
+      width: 7.41px;
+    //   height: 12px;
+
+    }
+    &_popup{
+        background: #DCFFDB;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 71px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+        // height: 103px;
+        padding: 21px 16px 21px 21px;
+        border-radius: 10px;
+        display: flex;
+    }
+    &_icon{
+        width: 31px;
+        height: 31px;
+        margin-right: 8px;
+    }
+    .body{
+        margin-bottom: 7rem;
+    }
+    .small_header{
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        font-family: 'kap-firma-md';
+        span{
+            font-family: 'kap-firma-md';
+            font-weight: 500;
+        }
+    }
+    
+   
+    &_Form{
+        padding-top: 45px;
+        label{
+            line-height: 18.85px;
+            font-size: 15px;
+            height: 19px;
+            width: 137px;
+        }
+        input{
+            margin-top: 8px;
+            height: 62px;
+            width: 100%;
+            border-radius: 10px;
+            background-color: #F7F7F7;
+            border: 1px;
+            color: #000000;
+            outline: none;
+            padding: 1px 17px;
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 39px;
+        }
+        
+    }
+    &_flex{
+        display: flex;
+        .field{
+            flex-direction: column;
+            align-items: center;
+            flex: 50%;
+        }
+        .mr{
+            margin-right:52px ;
+        }
+    }
+   
+    .btn{
+        background: #06335B;
+        border-radius: 5px;
+        color: white;
+        height: 40px;
+        width: 101px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        border: 0;
+        position: relative;
+        // top: 330px;
+        left: 55vw;
+        // margin-right: 7vw;
+        
+    }
+   
+    @media only screen and (max-width: 333px)  {
+        .btn{
+        left:47vw;
+            }
+            &_popup{
+                padding: 21px 16px 21px 16px;
+            }    
+    
+    }
+    @media only screen and (max-width: 360px) and (min-width: 334px)  {
+        .btn{
+        left:50vw;
+    }
+    }
+    @media only screen and (max-width: 375px) and (min-width: 360px) {
+        .btn{
+        left:52vw;
+    }
+    }
+    .btn2{
+        background: #062F4B;
+        border-radius: 10px;
+        color: white;
+        height: 50.24px;
+        width: 80vw;
+        font-weight:400;
+        font-size: 20px;
+        line-height: 25px;
+        border: 0;
+        position: inherit;
+        margin-left: 3.2vw;
+        
+    }
+}
+
+

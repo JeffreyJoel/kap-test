@@ -1,0 +1,116 @@
+@import '../../config/styles/variables';
+
+.Setting{
+   
+    &_Body{
+        margin: 7vw 7vw 10vh 7vw;
+        font-family: 'kap-firma-md';
+        *{
+            font-family: 'kap-firma-md';
+            font-style: normal;
+            color: #000000;
+        }
+        }
+        .small_header{
+            font-family: 'kap-firma-rg';
+            margin-bottom: 2vh;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    &_item{
+        height: 23px;
+        width: 100%;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        padding: 5vh 0 4.5vh 0;
+        border-bottom: 0.4px solid rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       div{
+           display: flex;
+           align-items: center;
+           img{
+               margin-top: 1px;
+           }
+       }
+        div span{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            color: #4B4B4B;
+            margin-right: 10px;
+        }
+       div img, img{
+            width: 7.41px;
+            //height: 12px;
+            margin-right:4vw ;
+            //margin-top: 2vh;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 26px;
+        }
+    
+        /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+    
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 19.64px;
+            width: 19.64px;
+            left: 9px;
+            top: 3px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+    
+        input:checked+.slider {
+            background-color: #06335B;
+        }
+    
+        input:focus+.slider {
+            box-shadow: 0 0 1px #06335B;
+        }
+    
+        input:checked+.slider:before {
+            -webkit-transform: translateX(22.5px);
+            -ms-transform: translateX(22.5px);
+            transform: translateX(22.5px);
+        }
+    
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 20px;
+        }
+    
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    
+    
+        }
+    }

@@ -1,0 +1,248 @@
+@import '../../config/styles/variables';
+
+@media only screen and (max-width: 900px) {
+    .Signup__form {
+        margin: 130px 7vw;
+
+        .error {
+            font-family: "kap-firma-rg";
+            font-size: 12px;
+            color: rgb(233, 68, 68);
+            margin-top: 5px;
+            gap: 10px;
+        }
+
+        &__heading {
+            color: $primary_colour;
+            font-family: "kap-firma-md";
+            font-size: 22px;
+            text-align: center;
+        }
+
+        ;
+        &__subtitle{
+            text-align: center;
+            justify-content: center;
+            padding-bottom: 15px;
+        }
+        &__subtitle,
+        &__label {
+            font-size: 12px;
+            color: $primary_colour;
+            font-family: "kap-firma-md";
+            margin: 6px 0;
+            
+
+            a {
+                color: $link_colour;
+                font-family: "kap-firma-md";
+                text-decoration: none;
+            }
+        }
+
+        ;
+
+        &__label {
+            margin: 12px 0 7px 0;
+        }
+
+        ;
+
+        &__input {
+            width: 100%;
+            height: 40px;
+            border: 0.7px solid #707070;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+                border: none;
+                font-family: "kap-firma-md";
+                font-size: 14px;
+                padding: 5px;
+                flex: 1;
+
+                &:focus {
+                    border: none;
+                    border-top-left-radius: 8px;
+                    border-bottom-left-radius: 8px;
+                    outline: none;
+                }
+            }
+
+            ;
+
+            img {
+                width: 20px;
+                height: 18px;
+                margin: 0 10px;
+            }
+
+            ;
+        }
+
+        ;
+
+        &__radio {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            margin-top: 28px;
+            z-index: 1;
+
+           
+            /* Customize the label (the container) */
+                .container {
+                    display: block;
+                    position: relative;
+                    //padding-left: 35px;
+                    margin-bottom: 20px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    z-index: 0.1;
+                }
+                
+                /* Hide the browser's default checkbox */
+                .container input {
+                    position: absolute;
+                    opacity: 0;
+                    cursor: pointer;
+                    height: 0;
+                    width: 0;
+                }
+                
+                /* Create a custom checkbox */
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: #fff;
+                    border: 1px solid $btn_colour;
+                    border-radius: 50%;
+                }
+                
+                /* On mouse-over, add a grey background color */
+                .container:hover input ~ .checkmark {
+                    background-color: #fff;
+                }
+                
+                /* When the checkbox is checked, add a blue background */
+                .container input:checked ~ .checkmark {
+                    background-color: $btn_colour;
+                }
+                
+                /* Create the checkmark/indicator (hidden when not checked) */
+                .checkmark:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                }
+                
+                /* Show the checkmark when checked */
+                .container input:checked ~ .checkmark:after {
+                    display: block;
+                }
+                
+                /* Style the checkmark/indicator */
+                .container .checkmark:after {
+                    left: 5px;
+                    top: 1px;
+                    width: 5px;
+                    height: 10px;
+                    border: solid white;
+                    border-width: 0 3px 3px 0;
+                    -webkit-transform: rotate(45deg);
+                    -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+                }
+              
+            
+            p {
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+                color: #070F1C;
+                align-self: center;
+                margin-left: 20px;
+            }
+
+            a {
+                color: #6FCF97;
+                text-decoration: underline;
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+
+        ;
+
+        &__submit {
+            height: 45px;
+            background-color: $btn_colour;
+            width: 100%;
+            color: $bg_colour;
+            border-radius: 12px;
+            font-family: "kap-firma";
+            font-size: 16px;
+            border: none;
+            margin: 30px auto;
+            position: static;
+        }
+
+        ;
+
+        &__break {
+            display: flex;
+            align-items: center;
+
+            hr {
+                width: 100%;
+                color: #707070;
+            }
+
+            ;
+
+            p {
+                color: #707070;
+                font-size: 12px;
+                line-height: 17.6px;
+                font-family: "kap-firma-md";
+                display: block;
+                margin: 15px;
+                width: 100%;
+                text-align: center;
+            }
+
+            ;
+        }
+
+        ;
+
+        &__SM {
+            text-align: center;
+
+            img {
+                margin: 12px;
+                width: 27px
+            }
+        }
+
+    }
+
+    ;
+}

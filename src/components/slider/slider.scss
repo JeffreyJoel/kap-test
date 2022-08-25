@@ -1,0 +1,197 @@
+.Slider{
+$size-width: 100%;
+$size-height: 207px;
+
+.carousel-wrapper {
+  width: 100%;
+  // height: $size-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.carousel-container {
+  width: $size-width;
+  // height: $size-height;
+  overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  // overflow-x: auto;
+  // scroll-snap-type: none;
+  // scroll-behavior: smooth;
+  // -webkit-overflow-scrolling: touch;
+  scrollbar-track-color: transparent;
+}
+
+.carousel {
+  display: flex;
+  animation: sliding 8s linear infinite;
+  //animation-direction: alternate;
+  width: $size-width;
+  transition:all .35s ease-in-out;
+  // transition-timing-function: ;
+  transition-duration: 350ms;
+  div {
+      flex-shrink: 0;
+      width: $size-width;
+      border-radius: 10px;
+      position: relative;
+      justify-content: center;
+      align-items: center;
+    
+  }
+  &:hover {
+    animation-play-state: paused;
+  }
+  img{
+    height: $size-height;
+    width: 94%;
+    margin: 18px 3vw;
+    border-radius: 10px;
+    @media screen and (max-width:320px) {
+          height: 190px;
+        }
+  }
+}
+@keyframes sliding {
+  30% {
+    transform: translateX(0);
+  }
+  35% {
+    transform: translateX(-100%);
+  }
+  95% {
+    transform: translateX(-100%);
+   }
+   100%{
+    transform: translateX(-200%);
+   }
+  //  100%{
+  //   transform: translateX(1%);
+  //  }
+  // 70% {
+  //   transform: translateX(-100% * 2);
+  // }
+  // 98% {
+  //   transform: translateX(-100% * 2);
+  // }
+  // 100% {
+  //   transform: translateX(0);
+  // }
+}
+
+// .Carousel {
+//   width: 100%;
+//   text-align: center;
+//   overflow: hidden;
+// }
+
+// .slides {
+//   display: flex;
+//   overflow-x: auto;
+//   scroll-snap-type: x mandatory;
+//   scroll-behavior: smooth;
+//   -webkit-overflow-scrolling: touch;
+  
+//   /*
+//   scroll-snap-points-x: repeat(300px);
+//   scroll-snap-type: mandatory;
+//   */
+// }
+// .slides::-webkit-scrollbar {
+//   width: 2px;
+//   height: 2px;
+// }
+// .slides::-webkit-scrollbar-thumb {
+//   background: transparent;
+//   /* border-radius: 10px; */
+// }
+// .slides::-webkit-scrollbar-track {
+//   background: transparent;
+// }
+// .slides > div {
+//   scroll-snap-align: start;
+//   flex-shrink: 0;
+//    width: 94%;
+//    margin-right: 10px;
+//   border-radius: 10px;
+//   animation: slide 2s infinite;
+   
+//   transform-origin: center center;
+//   transform: translate3d(-100%, 0px, 0px);
+//   transition:all .35s ease-in-out;
+//   transition-duration: 350ms;
+//   position: relative;
+  
+//   /* display: flex; */
+//   justify-content: center;
+//   align-items: center;
+//   /* font-size: 100px; */
+
+// }
+// .slides > div > img{
+//   height: 225px;
+//   // background: #C4C4C4;
+//   border-radius: 10px;
+//   margin: 18px 3vw;
+//   width: 100%;
+//   @media screen and (max-width:320px) {
+//     height: 190px;
+//   }
+// }
+
+
+// .Carousel > a {
+//   display: inline-flex;
+//   width: 1.5rem;
+//   height: 1.5rem;
+//   /* background: white; 
+//   text-decoration: none;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 50%;
+//   margin: 0 0 0.5rem 0;
+//   position: relative;*/
+// } 
+// .Carousel > a:active {
+//   top: 1px;
+// }
+// .Carousel > a:focus {
+//   background: #000;
+// }
+
+// /* Don't need button navigation */
+// /* @supports (scroll-snap-type) {
+//   .Carousel > a {
+//     display: none;
+//   }
+// } */ 
+//   @keyframes slide{
+//     0%{
+//         transform: translateX(0%);
+//     }
+//     50%{
+//         transform: translateX(-0%);
+//     }
+//     100%{
+//         transform: translateX(-103%);
+//     }
+//     // %{
+//     //     transform: translateX(-75%);
+//     // }
+//     // 100%{
+//     //     transform: translateX(-102%);
+//     // }
+//     // 75%{
+//     //     transform: translateX(-75%);
+//     // }
+//     // 80%{
+//     //     transform: translateX(-80%);
+//     // }
+//     // 100%{
+//     //     transform: translateX(-102%);
+//     // }
+//   }
+
+}

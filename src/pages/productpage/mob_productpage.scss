@@ -1,0 +1,301 @@
+@import "../../config/styles/variables";
+
+.ProductPage {
+    padding-bottom: 100px;
+
+    &__header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+        padding-bottom: 12px;
+        filter: drop-shadow(0px 3px 12px rgba(0, 0, 0, 0.071));
+        z-index: 200;
+    }
+
+    &__product {
+        padding: 31px 7vw;
+
+        &__img {
+            height: 281px;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        &__info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 22px 0 15px;
+
+            &__name {
+                font-family: "kap-firma";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: #151515;
+                width: 207px;
+
+                span {
+                    font-family: "kap-smtb";
+                    font-weight: 800;
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-style: italic;
+                }
+            }
+
+            &__cta {
+                background: #06335B;
+                box-shadow: 0px 4px 4px rgba(6, 51, 91, 0.25);
+                border-radius: 4px;
+                border: none;
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 23px;
+                color: #FFFFFF;
+                width: 80px;
+                height: 35px;
+                margin-left: 10px;
+            }
+        }
+
+        &__location {
+            display: flex;
+            align-items: center;
+            font-family: "kap-firma-rg";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+            gap: 5px;
+            span{
+                margin-top: 1px;
+            }
+            img {
+                height: 16px;
+                width: 12px;
+                object-fit: contain;
+            }
+            p{
+                padding-top: 10px;
+            }
+        }
+
+        &__desc {
+            margin: 34px 0;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+            padding: 12px 7px;
+            position: relative;
+
+            &__heading {
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 7px;
+            }
+
+            &__detail {
+                font-family: "kap-firma-lt";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 15px;
+                color: #1A1A1A;
+                margin-bottom: 10px;
+            }
+
+            span {
+                font-family: "kap-firma-lt";
+                font-style: normal;
+                font-weight: 1000;
+                font-size: 11px;
+                line-height: 14px;
+                color: #57CC99;
+                position: absolute;
+                bottom: 7px;
+                right: 7px;
+            }
+        }
+    }
+
+    &__aswapper {
+        padding: 0 7vw;
+
+        &__heading {
+            font-family: "kap-firma-rg";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+        &__info {
+            display: flex;
+            margin: 13px 0 20px;
+
+            &__img {
+                height: 37px;
+                width: 37px;
+                border-radius: 50%;
+                background-image: url("../../props/images/user.png");
+                background-position: center;
+                background-size: contain;
+                margin-right: 7px;
+            }
+
+            &__meta {
+                margin: 0 7px;
+                flex: 1;
+
+                &__name {
+                    font-family: "kap-firma-rg";
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 19px;
+                    line-height: 24px;
+                    color: #1B1B1B;
+                }
+
+                &__role {
+                    font-family: "kap-firma-lt";
+                    font-style: normal;
+                    font-weight: 1000;
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+
+            img {
+                justify-self: flex-end;
+            }
+        }
+
+        &__rating {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__score {
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 18px;
+                margin: 0;
+                padding: 0;
+
+                span {
+                    font-family: "kap-firma-rg";
+                    font-weight: 500;
+                }
+            }
+
+            &__star {
+                margin: -7px 0;
+                padding: 0;
+
+                * {
+                    margin-right: 4px;
+                }
+            }
+
+            &__cta {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                right: 0;
+                top: -5px;
+
+                p {
+                    font-family: "kap-firma-rg";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 16px;
+                    text-align: right;
+                    width: 59px;
+                    margin-right: 10px;
+                }
+
+                div {
+                    border: none;
+                    width: 41px;
+                    height: 41px;
+                    background: #06335B;
+                    box-shadow: 0px 4px 4px rgba(6, 51, 91, 0.25);
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    &__reviews {
+        padding: 28px 7vw;
+
+        h3 {
+            font-family: "kap-firma-rg";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 7px 0;
+        }
+
+        &__block {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+            padding: 29px 20px;
+            position: relative;
+
+            hr {
+                color: rgba(0, 0, 0, 0.3);
+                outline: none;
+                height: 0.4px;
+                margin: 7px 0;
+            }
+
+            span {
+                font-family: "kap-firma-lt";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 11px;
+                color: #57CC99;
+                position: absolute;
+                right: 18px;
+                bottom: 10px;
+            }
+        }
+    }
+
+    &__MoreItems {
+        h3 {
+            font-family: "kap-firma-md";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            color: #070F1C;
+            margin-left: 6vw;
+        }
+
+        &__Product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    }
+}

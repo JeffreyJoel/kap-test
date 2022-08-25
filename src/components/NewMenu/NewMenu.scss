@@ -1,0 +1,240 @@
+@media screen and(max-width : 999px) {
+  // ---------------------------
+// Vars & Helper Functions
+// ---------------------------
+
+:root {
+  --screen-width:     100vw;
+  --screen-height:    100vh;
+  //  --splash-bg-color:  rgba(245, 245, 245, 1);
+  --splash-bg-color:  #fff;
+}
+
+// calculate a circle's circumference based on radius
+@function circumference($r){
+  $pi: 3.141592653;
+  @return 2*$pi*$r;
+}
+
+
+// ---------------------------
+// Main Navigation Menu
+// ---------------------------
+
+.viewport {
+  height: 7vh;
+  background-color: transparent;
+  width: 100vw;
+
+  .regHeaderLogo{
+    display: none;
+  }
+
+  .header {
+    padding: 17px;
+    position: absolute;
+    z-index: 2000;
+      width: 100%;
+    }
+
+.nav {
+  // position: fixed;
+  // width: 100%;
+  padding: 0;
+  &__toggleCover {
+      // padding:17px;
+      // width: 100%;
+
+      z-index: 1500;
+      top: 0;
+      display: flex;
+      align-items: center;
+      img{
+        width: 96px;
+        z-index: 300;
+      }
+  }
+  // Toggle Button
+  &__toggle {
+    width: 48px;
+    display:inline-block;
+    position:absolute;
+    z-index: 1500;
+    padding:0px;
+    border:0;
+    background:transparent;
+    outline:0;
+    right:1vw;
+    // top:15px;
+    cursor:pointer;
+    //border-radius:50%;
+    transition:background-color .15s linear;
+    
+  //   &:hover,
+  //   &:focus {
+  //     //background-color:rgba(0,0,0,.5);
+  //   }
+  }
+ 
+  
+  &__menu {
+  //   display:flex;
+  //   flex-direction:column;
+  //   justify-content:center;
+  // height:var(--screen-height);
+  // position:relative;
+  //   z-index:5;
+     width: 100%;
+    visibility:hidden;
+    .Menu{
+      background-color: transparent;
+    }
+    .Menu__noAuth{
+      opacity:0;
+      
+      // padding-top: 50px;
+    }
+
+  }
+  
+  
+}
+
+
+// ---------------------------
+// SVG Menu Icon
+// ---------------------------
+.menuicon {
+  width: 90%;
+  height: 48px;
+  display:block;
+  cursor:pointer;
+  color: white;
+  
+  transform:rotate(0deg);
+  transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000); 
+  
+  &__bar,
+  &__circle {
+    fill:none;
+    stroke: #fff;
+    stroke-width:3;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+  }
+  &__bar {
+    transform: rotate(0deg);
+    transform-origin:50% 50%;
+    transition: transform .25s ease-in-out;
+  }
+}
+
+
+// ---------------------------
+// Circular Splash Background
+// ---------------------------
+
+.splash {
+  position:fixed;
+  top:40px;
+  right:40px;
+  width: 1px;
+  height: 1px;
+  
+  &::after {
+    content:"";
+    display:block;
+    position:absolute;
+    border-radius:50%;
+    background-color:var(--splash-bg-color);
+    
+    // screen diameter can be 142vmax at most,
+    // circle needs to be twice that size to cover it
+    width:284vmax;
+    height:284vmax;
+    top:-142vmax;
+    left:-142vmax;
+    
+    transform: scale(0);
+    transform-origin:50% 50%;
+    transition: transform .5s cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    
+    will-change:transform;
+  }
+}
+
+
+// ---------------------------
+// Active State
+// ---------------------------
+
+.nav:target,
+.nav--open {
+  
+  //scale the background circle to full size
+  > .splash::after {
+    transform:scale(1);
+  }
+  
+  //animate the menu icon
+  .menuicon {
+    transform:rotate(180deg);
+    &__bar{
+      stroke: #000;
+    }
+   
+    &__bar:nth-child(1),
+    &__bar:nth-child(4) {
+      opacity:0;
+    }
+    &__bar:nth-child(2) {
+      transform: rotate(45deg);
+    }
+    &__bar:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+  // .waitlistHeaderLogo{
+  //   opacity: 1;
+  //   transition:all .7s ease;
+  //   width: 120px;
+  // }
+  .logo{
+    opacity: 1;
+    // transition:all 0.7s ease;
+    width: 120px;
+    animation:fadeIn 0.7s;
+  }
+  //show the nav items
+  .nav {
+  
+    &__menu {
+      visibility:visible;
+      .Menu__noAuth{
+        opacity:1;
+        transition:all 1s ease-in;
+      }
+    }
+   
+    
+  }
+}
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+  }
+  70%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+}
+}
+@media screen and (min-width:1000px) {
+  .viewport{
+    display: none;
+  }
+}

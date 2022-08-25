@@ -1,0 +1,950 @@
+@import "../../config/styles/_variables.scss";
+
+.WaitlistHome {
+    .loading-text{
+        color: white;
+        font-size: 14px;
+        font-family: 'kap-firma-rg';
+    }
+    &__top {
+        background-color: #06335B;
+        position: relative;
+        // top: ;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 40px;
+
+        .ellipse {
+            background: #57CC99;
+            opacity: 0.38;
+            filter: blur(340px);
+            width: 150px;
+            height: 150px;
+            position: absolute;
+        }
+
+        .up {
+            width: 150px;
+            height: 150px;
+            border-radius: 0 0 150px 150px;
+            right: 91px;
+            top: 0;
+        }
+
+        .left {
+            border-radius: 0;
+            border-top-right-radius: 100%;
+            left: 0;
+            bottom: 0;
+        }
+
+        .right {
+            border-radius: 0;
+            border-top-left-radius: 100%;
+            right: 0;
+            bottom: 0;
+        }
+
+        &__body {
+            &__main {
+                margin: 0vh 47px 0px 30px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 8.9vw;
+
+                &__left {
+                    color: #FFFFFF;
+
+                    .large-text {
+                        width: 376px;
+
+                        p {
+                            font-family: 'kap-firma-md';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 55px;
+                            line-height: 69px;
+
+                            // letter-spacing: 3;
+                            span {
+                                font-family: 'kap-firma-md';
+                                color: $link_colour;
+                            }
+                        }
+                    }
+
+                    .smallText {
+                        font-family: 'kap-firma-rg';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 22px;
+                        line-height: 30px;
+                        width: 319px;
+                        height: 40px;
+                        margin-top: 25px;
+                        // letter-spacing: 3;
+                    }
+                }
+                .floatAnimation{
+                    animation-name: floating;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: ease-in-out;
+                    margin-left: 30px;
+                    margin-top: 5px;
+                }
+                @keyframes floating {
+                    0% { transform: translate(0,  0px); }
+                    50%  { transform: translate(0, 15px); }
+                    100%   { transform: translate(0, -0px); }   
+                }
+            }
+        }
+    }
+
+    &__middle {
+        padding: 52px 30px;
+
+        .upper {
+            width: 369px;
+            margin: 0 auto;
+
+            p {
+                font-family: 'kap-firma-rg';
+                font-style: normal;
+                text-align: center;
+            }
+
+            p:nth-child(1) {
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            p:nth-child(2) {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 26px;
+                margin: auto;
+            }
+          
+        }
+
+        .lower {
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+
+            &__section {
+                display: flex;
+                gap: 14px;
+                align-items: center;
+
+                .text {
+                    width: 256px;
+
+                    p:nth-child(1) {
+                        font-family: 'kap-firma-rg';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 21px;
+                        margin-bottom: 12px;
+                    }
+
+                    p:nth-child(2) {
+                        font-family: 'kap-firma-rg';
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 22px;
+                    }
+                }
+                .smaller {
+                    width: 256px;
+                }
+                  .desktop{
+                margin-bottom:17px;
+            }
+            }
+        }
+    }
+
+    &__bottom {
+        background-color: #06335B;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+
+        .ellipse {
+            background: #57CC99;
+            opacity: 0.38;
+            filter: blur(340px);
+            width: 300px;
+            height: 300px;
+            position: absolute;
+        }
+
+        .up {
+            border-bottom-left-radius: 100%;
+            right: 0px;
+            top: 0;
+        }
+
+
+        .right {
+            border-radius: 0;
+            border-top-left-radius: 100%;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .left {
+            border-radius: 0;
+            border-top-right-radius: 100%;
+            left: 0;
+            // right: -328px;
+            // top: 532px;
+            bottom: 0;
+        }
+
+        &__body {
+
+            .header {
+                // padding: 0  ;
+                font-family: 'kap-firma-rg';
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 44px;
+                text-align: center;
+                color: #FFFFFF;
+                padding: 80px 92px;
+                letter-spacing: 3;
+            }
+
+            .sections {
+                // padding: 0 92px;
+                width: 837px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-grow: 2;
+                justify-content: baseline;
+                gap: 39px;
+                margin: auto;
+                row-gap: 48px;
+
+                // grid-row: auto;
+                .first,
+                .third {
+                    height: 242px;
+                }
+
+                .second {
+                    height: 208px;
+                }
+
+                .fourth {
+                    height: 285px;
+                    margin-top: -40px;
+                }
+
+                .item {
+                    // width: fit-content;
+                    width: 399px;
+                    // height: 208px;
+                    background: #FFFFFF;
+                    border-radius: 12px;
+                    padding: 50px 50px 57px 50px;
+                    // display: flex;
+                    // flex-direction: column;
+                    // align-items: center;
+
+                    p {
+                        font-family: 'kap-firma-rg';
+                        // letter-spacing: 3;
+                    }
+
+                    &__head {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 23px;
+                        padding: 10px 0;
+                        // color: red;
+                        /* identical to box height */
+                    }
+
+                    &__text {
+                        width: 274.56px;
+                        font-family: 'kap-firma-rg';
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #1F1F1F;
+                    }
+                }
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                padding: 0 92px;
+            }
+
+            .referral {
+                .label {
+                    font-family: 'kap-firma-rg';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    padding-bottom: 12px;
+                    // letter-spacing: 3;
+                }
+
+                .InputBox {
+                    background: #FFFFFF;
+                    border-radius: 6.80876px;
+                    width: 591px;
+                    height: 81.39px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    *{
+                        cursor: pointer;
+                    }
+
+                    input {
+                        width: 90%;
+                        height: 27px;
+                        font-weight: 500;
+                        font-size: 21.788px;
+                        line-height: 27px;
+                        color: #252525;
+                        font-family: 'kap-firma-rg';
+                        border: none;
+                        outline: none;
+                        text-align: center;
+                        // letter-spacing: 0.;
+                    }
+                }
+
+                .link {
+                    display: flex;
+                    // gap: 10px;
+                    justify-content: center;
+                    padding-top: 22px;
+                    align-items: center;
+                    cursor: pointer;
+
+                    span {
+                        font-size: 22px;
+                        color: $link_colour;
+                        font-family: 'kap-firma-md';
+                    }
+                    .clip{
+                        margin-bottom: 2px;
+                    }
+                }
+
+                .socials {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding: 37px 0 25px;
+                    -webkit-tap-highlight-color: transparent;
+                    button{
+                        background: transparent;
+                        border-radius: 0;
+                        position: static;
+                        height: fit-content;
+                        width: fit-content;
+                        margin: 0;
+                        margin-top:5px;
+                        -webkit-tap-highlight-color: transparent;
+                    }
+                    img{
+                        cursor: pointer;
+                    }
+                }
+
+                .final-text {
+                    font-family: 'kap-firma-rg';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 23.1509px;
+                    line-height: 29px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+
+
+
+        }
+
+        .SocialMediaConnect {
+            p {
+                color: #FFFFFF;
+            }
+        }
+        .SocialMediaConnect *{
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .FooterTag__footer {
+            border-top: 0.8px solid #FFFFFF;
+
+            p {
+                color: #FFFFFF;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (min-width:601px) and(max-width:900px) {
+    .WaitlistHome {
+        .WaitlistHome__top__body__main{
+            margin: 0vh 47px 0px 47px;
+            .floatAnimation{
+                margin-left: 0;
+            }
+        }
+        .WaitlistHome__top__body__main__left {
+            .large-text {
+                p {
+                    // font-weight: 700;
+                    font-size: 40px;
+                    width: 250px;
+                    line-height: 50px;
+                }
+            }
+            .smallText{
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .WaitlistHome__top__body__main__right {
+            img {
+                height: 100%;
+                width: 40vw;
+            //    height: auto;
+            }
+        }
+
+        &__middle {
+            // padding: 30px 16px;
+
+            .upper {
+                width: inherit;
+                margin: 0 auto;
+
+                &__head {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 11px;
+                }
+
+                &__text {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin: auto;
+                    font-family: 'kap-firma-rg';
+                }
+            }
+
+            .lower {
+                display: flex;
+                flex-direction: column;
+                margin-top: 0;
+
+                &__section {
+                    margin-top: 33px;
+                    display: flex;
+                    gap: 14px;
+                    align-items: center;
+
+                    .text {
+                        // width: 256px;
+                        width: 80vw;
+                    }
+
+                }
+            }
+        }
+
+        &__bottom {
+            &__body {
+
+                .header {
+                    font-family: 'kap-firma-rg';
+                    // padding: 0  ;
+                    font-weight: 600;
+                    font-size: 22px;
+                    // line-height: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 33px 60px;
+                    // width
+                }
+
+                .sections {
+                    width: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 0;
+                    gap: 0;
+                    margin: auto;
+
+                    .item {
+                        margin-top: 0px;
+                        height: fit-content;
+                        width: 80vw;
+                        margin-bottom: 20px;
+                        // height: 208px;
+                        background: #FFFFFF;
+                        border-radius: 12px;
+                        padding: 20px 20px 30px;
+
+                        p {
+                            font-family: 'kap-firma-md';
+                            // letter-spacing: 3;
+                        }
+
+                        &__text {
+                            width: 80%;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+
+            .SocialMediaConnect {
+                p {
+                    color: #FFFFFF;
+                }
+            }
+
+            .FooterTag__footer {
+                border-top: 0.8px solid #FFFFFF;
+
+                p {
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+    .WaitlistHome {
+        &__top {
+            background-color: #06335B;
+            position: relative;
+            top: 0;
+            width: 100vw;
+            height: fit-content;
+            padding-bottom: 30px;
+
+            .ellipse {
+                background: #57CC99;
+                opacity: 0.38;
+                filter: blur(340px);
+                width: 300px;
+                height: 300px;
+                position: absolute;
+            }
+
+            .up {
+                width: 300px;
+                height: 150px;
+                border-radius: 0 0 150px 150px;
+                right: 91px;
+                top: 0;
+            }
+
+            .left {
+                border-radius: 0;
+                border-top-right-radius: 100%;
+                left: 0;
+                bottom: 0;
+            }
+
+            .right {
+                border-radius: 0;
+                border-top-left-radius: 100%;
+                right: 0;
+                bottom: 0;
+
+            }
+
+            &__body {
+                &__main {
+                    margin: 0px 47px 0px 30px;
+                    display: flex;
+                    flex-direction: column;
+
+                    &__left {
+                        color: #FFFFFF;
+
+                        .large-text {
+                            width: 130px;
+                            display: block;
+                            margin: auto;
+
+                            p {
+                                font-family: 'kap-firma-md';
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 25px;
+                                text-align: center;
+                            }
+
+                            img {
+                                width: 132.61px;
+                            }
+                        }
+                        
+                        @media screen and (min-width:375px) {
+                            .large-text {
+                                width: 170px;
+
+                                p {
+                                    font-size: 27px;
+                                    line-height: 30px;
+                                    padding-bottom: 5px;
+                                }
+                                img{
+                                    display: block;
+                                    margin:auto;
+                                }
+                            }
+                        }
+
+                        .smallText {
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                            text-align: center;
+                            width: 200px;
+                            height: 36px;
+                            margin-top: 25px;
+                            display: block;
+                            // letter-spacing: 3;
+                        }
+                    }
+
+                    &__right {
+                        margin-top: 33px;
+
+                        img {
+                            display: block;
+                            width: 96%;
+                            margin: auto;
+                            // height: 303px;
+                        }
+                    }
+                    .floatAnimation{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        &__middle {
+            padding: 30px 16px;
+
+            .upper {
+                width: inherit;
+                margin: 0 auto;
+
+                p {
+                    font-family: 'kap-firma-md';
+                    font-style: normal;
+                    text-align: center;
+                    // letter-spacing: 3;
+                }
+
+                p:nth-child(1) {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    margin-bottom: 11px;
+                }
+
+                p:nth-child(2) {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    margin: auto;
+                    font-family: 'kap-firma-rg';
+                    width: 256px;
+                }
+            }
+
+            .lower {
+                display: flex;
+                // justify-content: space-around;
+                flex-direction: column;
+                margin-top: 0;
+
+                &__section {
+                    margin-top: 33px;
+                    display: flex;
+                    gap: 14px;
+                    align-items: center;
+
+                    .text {
+                        // width: 256px;
+                        width: 70%;
+
+                        p:nth-child(1) {
+                            font-family: 'kap-firma-md';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 21px;
+                            margin-bottom: 12px;
+                            // letter-spacing: 3;
+                            /* or 82% */
+                        }
+
+                        p:nth-child(2) {
+                            font-family: 'kap-firma-rg';
+                            font-weight: 500;
+                            font-size: 14px;
+                            // letter-spacing: 3;
+                        }
+                    }
+
+                    // .smaller {
+                    //     width: 256px;
+                    // }
+                }
+            }
+        }
+
+        &__bottom {
+            background-color: #06335B;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+
+            .ellipse {
+                background: #57CC99;
+                opacity: 0.38;
+                filter: blur(340px);
+                width: 150px;
+                height: 150px;
+                position: absolute;
+            }
+
+            .up {
+                width: 100px;
+                height: 150px;
+                border-radius: 0 0 150px 150px;
+                right: 91px;
+                top: 0;
+            }
+
+            .left {
+                border-radius: 0;
+                border-top-right-radius: 100%;
+                left: 0;
+                bottom: 0;
+            }
+
+            .right {
+                border-radius: 0;
+                border-top-left-radius: 100%;
+                right: 0;
+                bottom: 0;
+
+            }
+
+            &__body {
+                .header {
+                   
+                    // padding: 0  ;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 33px 60px;
+                    // width
+                }
+
+                .sections {
+                    // padding: 0 92px;
+                    width: inherit;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 0;
+                    gap: 0;
+                    margin: auto;
+
+                    // grid-row: auto;
+                    .item {
+                        margin-top: 0px;
+                        height: fit-content;
+                        width: 90vw;
+                        margin-bottom: 20px;
+                        border-radius: 12px;
+                        padding: 20px 11px 20px 11px;
+                        display: flex;
+                        gap: 14px;
+
+                        p {
+                            font-family: 'kap-firma-md';
+                            // letter-spacing: 3;
+                            line-break: strict;
+                        }
+
+                        &__head {
+                            font-family: 'kap-firma-rg';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 14px;
+                            line-height: 18px;
+                            padding: 3px 0;
+                            // color: red;
+                            /* identical to box height */
+                        }
+
+                        &__text {
+                            width: auto;
+                            font-family: 'kap-firma-rg';
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #1F1F1F;
+                        }
+
+                        .fourth {
+                            p {
+                                width: min-content;
+                            }
+                        }
+
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
+
+                .container {
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 92px;
+                }
+
+                .referral {
+                    color: #FFFFFF;
+
+                    .label {
+                        font-family: 'kap-firma-rg';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        padding-bottom: 8px;
+                        // letter-spacing: 3;
+                    }
+
+                    .InputBox {
+                        border-radius: 6.80876px;
+                        width: 259px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        input {
+                            width: 90%;
+                            height: 100%;
+                            font-weight: 500;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: #252525;
+                            font-family: 'kap-firma-rg';
+                            border: none;
+                            outline: none;
+                            text-align: center;
+                            // letter-spacing: 0.;
+                        }
+                    }
+
+                    .link {
+                        display: flex;
+                        // gap: 10px;
+                        justify-content: flex-end;
+                        padding-top: 10px;
+
+                        span {
+                            font-weight: 600;
+                            font-size: 12px;
+                            line-height: 15px;
+                            color: $link_colour;
+                            font-family: 'kap-firma-md';
+                        }
+
+                        img {
+                            width: 12px;
+                        }
+                    }
+
+                    .socials {
+                        display: flex;
+                        justify-content: space-evenly;
+                        padding: 37px 0 25px;
+
+                        img {
+                            width: 75px;
+                        }
+                    }
+
+                    .final-text {
+                        font-family: 'kap-firma-rg';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 15px;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+
+            .SocialMediaConnect {
+                p {
+                    color: #FFFFFF;
+                }
+            }
+
+            .FooterTag__footer {
+                border-top: 0.8px solid #FFFFFF;
+
+                p {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+    }
+    
+}

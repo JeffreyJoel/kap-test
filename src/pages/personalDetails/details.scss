@@ -1,0 +1,43 @@
+@import '../../config/styles/variables';
+
+.Details{
+   
+    &_Body{
+        margin: 7vw 7vw 10vh 7vw;
+        *{
+            font-family: 'kap-firma-md';
+            font-style: normal;
+            color: #000000;
+        }
+        }
+    &_item{
+        height: 23px;
+        width: 100%;
+        padding: 12px 22px 60px 10px;
+        border: 0.4px solid rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 34px;
+       
+        label{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            color: #535353;
+        }
+        p{
+            font-family: 'kap-firma-rg';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 23px;
+            margin-top: 5px;
+        }
+        img{
+            width: 7.41px;
+            height: 12px;
+            margin-top:1rem;
+        }
+        }
+    }

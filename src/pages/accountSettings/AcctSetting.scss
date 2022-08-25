@@ -1,0 +1,61 @@
+@import "../../config/styles/variables";
+
+.AcctSettings{
+    &_body{
+        margin: 3vh 7vw 10vh 7vw;
+        font-family:'kap-firma-rg';
+        font-style: normal;
+        color: #070F1C;
+
+        .section{
+            display: flex;
+            justify-content: space-between;
+        }
+        .pointer{
+            width: 10px;
+            height: 10px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        &_top{
+            .userIcon{
+                width: 91px;
+                height: 91px;
+            }
+            .t1{
+                font-weight: 600;
+                font-size: 19px;
+                line-height: 24px;
+            }
+            .t2{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+
+            }
+            .text{
+                margin-top: auto;
+                margin-bottom: auto;
+                // margin-left: 20px;
+            }
+        }
+        .Acct_label{
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            margin-top: 37px;
+        }
+        .items{
+            padding-top: 31px;
+            padding-bottom: 15px;
+            border-bottom: 0.4px solid rgba(0, 0, 0, 0.4);
+            p{
+                font-family:'kap-firma-rg';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+            }
+        }
+    }
+
+}

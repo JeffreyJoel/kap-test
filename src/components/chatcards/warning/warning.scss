@@ -1,0 +1,87 @@
+.Warning {
+    display: flex;
+    background: #06335B;
+    border-radius: 10px;
+    padding: 17px 10px 17px 10px;
+
+    &__info {
+        font-family: "kap-firma-md";
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    &__more {
+        display: flex;
+        align-self: flex-end;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 0;
+        z-index: 700;
+
+        span {
+            font-family: "kap-firma-md";
+            font-size: 11px;
+            line-height: 16px;
+            color: #57CC99;
+        }
+    }
+
+    &__close {
+        align-self: center;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.More {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    z-index: 300;
+    top: 0;
+    background: #000000a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__info {
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 12px 20px;
+        position: relative;
+        margin: 0 9vw;
+        object-fit: contain;
+
+        h3 {
+            font-family: "kap-firma-rg";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 23px;
+            color: #141414;
+            text-align: center;
+        }
+        ul{
+            position: static;
+            // margin-left: 20px;
+            padding-left: 4vw;
+        }
+        
+        li {
+            font-family: "kap-firma-md";
+            font-size: 14px;
+            line-height: 16px;
+            position: static;
+            margin: 9px 0;
+        }
+        button{
+            position: static;
+            width: 100%;
+            margin: 12px 0;
+        }
+    }
+}

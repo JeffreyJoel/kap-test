@@ -1,0 +1,16 @@
+.Blog{
+    hr{
+       border-width: 0.1px;
+        border-color: rgba(220, 216, 216, 0.5);
+    }
+   &__post{
+    margin: 3vh 5vw 5vh;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    line-break: strict;
+    justify-content: center;
+    padding: 3px;
+   }
+}

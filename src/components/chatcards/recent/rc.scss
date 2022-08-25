@@ -1,0 +1,62 @@
+@import "../../../config/styles/variables";
+
+.RecentMessage{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    &__img{
+        width: 68px !important;
+        border-radius: 50%;
+        margin: 5px 11px 5px 0;
+    }
+    &__meta{
+        flex: 1;
+        &__author, &__message{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__name{
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;               
+            }
+            &__time{
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: #333333;
+                opacity: 0.6;
+            }
+        }
+        &__message{
+            padding-top: 10px;
+            &__detail{
+                font-family: "kap-firma-lt";
+                font-style: normal;
+                font-weight: 800;
+                font-size: 12px;
+                line-height: 18px;               
+            }
+            &__no{
+                width: 23px;
+                height: 23px;
+                color: #FFFFFF;
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 10px;
+                line-height: 13px;
+                background: #06335B;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: 11px;
+            }
+        }
+    }
+}

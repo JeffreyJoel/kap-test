@@ -1,0 +1,62 @@
+@import "../../../config/styles/variables";
+
+.Message, .Message__reverse{
+    
+    border-radius: 0px 20px;
+    width: 240px;
+    padding: 8px 10px;
+    margin: 26px 0;
+    .author{
+        font-family: "kap-firma-rg";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        padding: 4px 0;
+    }
+    .info{
+        display: flex;
+        justify-content: space-between;
+        padding: 4px 0;
+        &__time{
+            font-family: "kap-firma-lt";
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__detail{
+            font-family: "kap-firma-rg";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}
+.Message{
+    align-self: flex-start;
+    background: #EAEAEA;
+    &.author, .info{
+        color: #102A41;
+        flex-direction: row-reverse;
+        &__time{
+            color: #A1A1BC;
+            margin-top: 10px;
+        }
+    }
+    
+}
+.Message__reverse{
+    align-self: flex-end;
+    background: #DEFFD2;
+    .author, .info{
+        color: #308560;
+        flex-direction: row-reverse;
+        &__time{
+            color: #67B391;
+            margin-top: 10px;
+
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import '../../config/styles/variables';
+.BlogBanner{
+    position: relative;
+    &__image{
+        height: 208px;
+        background: #C4C4C4;
+       border-radius: 10px;
+       margin: 18px 3vw;
+       width: 93%;
+        // img{
+          
+        // }
+    }
+}

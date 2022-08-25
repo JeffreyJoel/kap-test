@@ -1,0 +1,51 @@
+@import "../../config/styles/_variables.scss";
+
+.SortSwaps{
+    &__header {
+        font-family: "kap-firma-rg";
+        display: flex;
+        align-items: center;
+        padding: 29px 5vw 17px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 50px;
+        position: sticky;
+        top: 0;
+        background-color: #FFFFFF;
+        z-index: 2;
+        // justify-content: ;
+
+        h3 {
+            font-family: "kap-firma-rg";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 28px;
+        }
+    }
+    &__section{
+        font-family: "kap-firma-lt";
+        margin:0vh 5vw 8vh;
+        &__items{
+            display: flex;
+            justify-content: space-between;
+            padding-top:30px ;
+            
+            &__top{
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+                font-family: "kap-firma-rg";
+            }
+            div{
+                :nth-child(2){
+                    font-weight: 400;
+                font-size: 15px;
+                 line-height: 19px;
+                 color: #838383;
+                 font-family: "kap-firma-rg";
+                }
+            }
+            }
+        }
+    
+}

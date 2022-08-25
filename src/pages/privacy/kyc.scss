@@ -1,0 +1,160 @@
+@import '../../config/styles/variables';
+
+.KYC{
+    &_body{
+        padding: 7vw 7vw 20vh 7vw;
+        *{
+        font-family: 'kap-firma-rg';
+        font-style: normal;
+    }
+    .pointer{
+        width: 10px;
+        height: 10px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-right: 3vw;
+    }
+        }
+        &_top{
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    &_section2{
+        h3{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 23px;
+        margin-bottom: 3px;
+        }
+        p{
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+    &_section3{
+        display: flex;
+        margin-top: 37px;
+    &_div{
+        width: 182px;
+        height: 109px;
+        background: #F3F3F3;
+        border-radius: 5px;
+        margin-right: 10px;
+        display: flex;
+        padding-top: 10px;
+        // padding-left: 8px;
+        justify-content: space-between;
+        .unavailable{
+            position: absolute;
+            width: 89px;
+            height: 14px;
+            left: 114px;
+            top: 247px;
+        }
+        .uavlb2{
+            left: 297px;
+        }
+        @media only screen and (max-width: 420px) {
+            .unavailable{
+                left: 108px;
+                top: 245px;
+            }
+            .uavlb2{
+                left: 282px;
+            }
+        }
+        @media only screen and (max-width: 400px)  {
+            .unavailable{
+                left: 98px;
+                top: 242px;
+            }
+            .uavlb2{
+                left: 268px;
+            }
+        }
+        @media screen and (max-width:375px) {
+            .unavailable{
+                left: 90px;
+                top: 240px;
+            }
+            .uavlb2{
+                left: 250px;
+            }
+        }
+        @media screen and (max-width:360px) {
+            .unavailable{
+                left: 80px;
+                top: 257px;
+            }
+            .uavlb2{
+                left: 235px;
+            }
+        }
+        @media screen and (max-width:320px) {
+            .unavailable {
+                left: 60px;
+                top: 252px;
+            }
+            .uavlb2{
+                left: 200px;
+            }
+        }
+        p{
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 15px;
+            margin-bottom: 11px;
+        }
+        .pointer{
+            margin-top: 0.7rem;
+            margin-bottom: auto;
+        }
+        
+        div{
+            margin-left: 11px;
+            margin-top: 15px;
+        }
+        .kyc2{
+            margin-top:21px;
+        }
+
+    }
+    }
+ 
+    &_section4{
+        .KYC_items{
+            padding-top: 31px;
+            padding-bottom: 15px;
+            border-bottom: 0.4px solid rgba(0, 0, 0, 0.4);
+            display: flex;
+            justify-content: space-between;
+            div{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 10px;
+                    height: 10px;
+                    // margin:auto inherit;
+                    margin-top: 8px;
+                }
+            }
+            p{
+                font-family:'kap-firma-rg';
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+            }
+            span{
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 18px;
+                color: #4B4B4B;
+                margin-right: 10px;
+            }
+        }
+    }   
+        
+}

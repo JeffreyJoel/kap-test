@@ -1,0 +1,27 @@
+.BlogHeader{
+    margin: 7vh 5vw 5vh;
+    // border-bottom:  0.6px solid rgba(0, 0, 0, 0.5);
+    &__title{
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 28px;
+        // width: 90%;
+        justify-content: center;
+    }
+    &__links{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        p{
+         padding: 20px 5px 3px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        // border: 2px solid;
+        
+        }
+        .active{
+            border-bottom: 4px solid #06335B;
+        }
+    }
+}

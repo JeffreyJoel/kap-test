@@ -1,0 +1,77 @@
+@import '../../config/styles/variables';
+
+.WebFooter {
+    @media screen and (max-width: 900px) {
+        padding: 32px 0 75px;
+
+        &__main {
+            display: flex;
+            flex-direction: column;
+            gap: 26px;
+
+            &__socials {
+                display: flex;
+                justify-content: space-between;
+                width: 125px;
+            }
+
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .right {
+                    text-align: right;
+                }
+
+                &__section {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+
+                    &__header {
+                        width: 80px;
+                        font-family: 'kap-firma-md';
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #06335B;
+                    }
+
+                    p,
+                    a {
+                        font-family: 'kap-firma-rg';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #4B4B4B;
+                    }
+
+                }
+
+                // &__content{
+                //   
+                // }
+            }
+
+            .bottom {
+                align-items: unset;
+                .low{
+                    padding-top: 28px;
+                }
+
+                small {
+                    font-style: normal;
+                    font-family: 'kap-firma-md';
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #4B4B4B;
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,146 @@
+@import '../../../config/styles/variables';
+
+@media only screen and (max-width: 900px) {
+    .HomeScreen {
+        padding-bottom: 100px;
+
+        &__banner__sticky {
+            position: sticky;
+            top: 0;
+            background-color: #FFFFFF;
+            box-shadow: 0px -10px 20px #707070;
+            padding-bottom: 9px;
+            z-index: 900;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow-x: auto;
+            margin: 0 2vw;
+           
+        }
+
+        &__giveaway {
+            .banner {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 0 6vw;
+
+                span {
+                    color: #06335B;
+                    font-size: 15px;
+                    line-height: 19px;
+                    font-family: 'kap-firma-md';
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+
+            .heading {
+                font-family: 'kap-firma-md';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 17px;
+                line-height: 26px;
+                color: #06335B;
+                flex: 1;
+            }
+
+        }
+
+        &__swapmoney {
+            .banner {
+                background-color: #11F94F;
+                color: #FFFFFF;
+                padding: 24px 3vw;
+
+                .heading {
+                    display: flex;
+                    justify-content: space-between;
+                    font-family: 'kap-firma-md';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 23px;
+
+                    span {
+                        font-size: 13px;
+                        line-height: 16px;
+                        font-family: 'kap-firma-md';
+                        font-weight: 500;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        &__day {
+            .banner {
+
+                color: #2D2D2D;
+                padding: 7px 6vw;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .heading {
+                    display: flex;
+                    align-items: center;
+                    font-family: 'kap-firma-md';
+                    font-style: normal;
+                    font-size: 17px;
+                    line-height: 23px;
+                    font-weight: 700;
+                    flex: 1;
+                }
+
+                span {
+                    color: #06335B;
+                    font-size: 15px;
+                    line-height: 19px;
+                    font-family: 'kap-firma-md';
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &__year {
+            .banner {
+
+                padding: 7px 6vw;
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .heading {
+                    color: #2D2D2D;
+                    display: flex;
+                    align-items: center;
+                    font-family: 'kap-firma-md';
+                    font-style: normal;
+                    font-size: 15px;
+                    line-height: 23px;
+                    font-weight: 700;
+                    flex: 1;
+
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+
+                span {
+                    color: #06335B;
+                    font-size: 15px;
+                    line-height: 19px;
+                    font-family: 'kap-firma-md';
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

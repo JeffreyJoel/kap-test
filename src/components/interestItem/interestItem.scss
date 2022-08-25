@@ -1,0 +1,79 @@
+@import '../../config/styles/variables';
+
+@media only screen and (max-width: 900px) {
+    .InterestItem {
+        margin: 12px 7vw;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+        padding: 10px 2vw;
+
+        &__info {
+            display: flex;
+            align-items: center;
+            gap: 7vw;
+            position: relative;
+
+            &__img {
+                img {
+                    max-width: 77px;
+                }
+            }
+
+            &__name {
+                * {
+                    font-family: "kap-firma-rg";
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 19px;
+                    max-width: 135px;
+                }
+                span{
+                    font-weight: 700;
+                }
+            }
+
+            &__cta {
+                position: absolute;
+                top: 2.5vh;
+                right: 8px;
+                background: #06335B;
+                box-shadow: 0px 4px 4px rgba(6, 51, 91, 0.25);
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 42px;
+                width: 42px;
+            }
+        }
+
+        hr {
+            margin: 15px 8px;
+            height: 1px;
+        }
+
+        &__remove {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+            padding: 0 8px;
+
+            svg {
+                border-radius: 50%;
+                background: rgba(126, 134, 158, 0.25);
+            }
+
+            P {
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 19px;
+                color: #06335B;
+            }
+        }
+
+
+    }
+}

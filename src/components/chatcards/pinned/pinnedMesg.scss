@@ -1,0 +1,49 @@
+@import '../../../config/styles/variables';
+@media only screen and (max-width: 349px) {
+    .PinnedMeg{
+        width: 135px;
+        padding: 4px;
+    }
+}
+@media only screen and (min-width: 350px) {
+    .PinnedMeg{
+        width: 150px;
+        padding: 8px;
+    }
+}
+@media only screen and (min-width: 395px) {
+    .PinnedMeg{
+        width: 167px;
+        padding: 8px;
+    }
+}
+.PinnedMeg{
+    background-color: #F7F7F7;
+    border-radius: 8px;
+    margin: 10.5px 0;
+    &__userInfo{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        &__img{
+            width: 36px;
+            border-radius: 50%;
+            margin: 0 8px 0 0;
+        }
+        &__name{
+            font-family: 'kap-firma-rg';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+        }
+
+    }
+    &__message{
+        font-family: "kap-firma-lt";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        margin: 0 0 12px 8px;
+    }
+}

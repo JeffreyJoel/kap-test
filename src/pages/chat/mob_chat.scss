@@ -1,0 +1,129 @@
+@import "../../config/styles/variables";
+
+.Chat{
+    height: 100%;
+    &__section{
+        position: relative;
+        height: 100vh;
+        &__header{
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #EDEDED;
+            background-color: #FFFFFF;
+            &__back{
+                margin: 12px;
+            }
+            &__avatar{
+                width: 54px;
+                height: 54px;
+                border-radius: 50%;
+            }
+            &__name{
+                margin-left: 12px;
+                font-family: "kap-firma-rg";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 23px;
+                color: #0C0C0C;
+                flex: 1;               
+            }
+            &__menu{
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+        }
+        &__body{
+            padding: 14px 7vw;
+            display: flex;
+            flex-direction: column;
+            .NoMsg{
+                margin: 25% auto 0;
+                text-align: center;
+                line-height: 152.2%;
+                img{
+                    display: block;
+                    margin: auto;
+                }
+                &_bold{
+                    font-weight: 700;
+                    font-size: 24px;
+                    margin-top: 27px;
+                    margin-bottom: 10px;
+                }
+                &_light{
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #9E9E9E;
+                }
+            }
+        }
+        &__footer{
+            display: flex;
+            border-top: 1px solid #cbcaca;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 18px 3vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 200;
+            background-color: #FFFFFF;
+
+            &__message{
+                background: #d8dbde5d;
+                border-radius: 159.169px;
+                display: flex;
+                align-items: center;
+                height: 45px;
+                flex: 1;
+
+                textarea{
+                    flex: 1;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    padding: 10px 20px;
+                    background-color: transparent;
+                    border-bottom-left-radius: 79.58px;
+                    border-top-left-radius: 79.58px;
+                    font-family: "kap-firma-rg";
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #5D6062;
+                    word-break: break-word;
+                    resize: none;
+                }
+                textarea::-webkit-scrollbar{
+                    display: none;
+                }
+                img{
+                    margin: 0 12px;
+                }
+            }
+            &__send{
+                background-color:  #06335B;
+                border-radius: 50%;
+                width: 46px;
+                height: 46px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                margin: 0 5px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                    display: block;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,196 @@
+@import '../../config/styles/variables';
+
+
+@media only screen and (max-width: 333px) {
+    .Product {
+        margin: 18px 5px;
+        width: 140px;
+        height: 180px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__image {
+            margin-bottom: 3px;
+            width: 127px;
+        }
+
+        &__details__info {
+            &__name {
+                font-size: 11px;
+                line-height: 14px;
+
+                span {
+                    font-size: 11px;
+                    line-height: 13.65px;
+                }
+            }
+
+            &__location {
+                font-size: 8px;
+                line-height: 11px;
+
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .like {
+            top: -80%;
+            right: 3vw;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 409px) and (min-width: 334px) {
+    .Product {
+        margin: 18px 1vw;
+        width: 160px;
+        height: 209px;
+        padding: 13px 13px 6px;
+        border-radius: 10px;
+
+        &__image {
+            height: 147px;
+        }
+
+        &__details__info {
+            &__name {
+                font-size: 11px;
+                line-height: 14px;
+
+                span {
+                    font-size: 11px;
+                    line-height: 13.65px;
+                }
+            }
+
+            &__location {
+                font-size: 10px;
+                line-height: 11px;
+
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .like {
+            top: -80%;
+            right: 3vw;
+        }
+
+    }
+}
+
+@media only screen and (min-width: 410px) {
+    .Product {
+
+        margin: 18px 3vw;
+        width: 180px;
+        height: 229px;
+        padding: 13px 13px 6px;
+        border-radius: 10px;
+
+        &__image {
+            margin-bottom: 9px;
+        }
+
+        &__details__info {
+            &__name {
+                font-size: 13px;
+                line-height: 16px;
+
+                span {
+                    font-size: 13px;
+                    line-height: 15.65px;
+                }
+            }
+
+            &__location {
+                font-size: 10px;
+                line-height: 11px;
+
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .like {
+            top: -80%;
+            right: 6vw;
+        }
+
+    }
+}
+
+.Product {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    &__image{
+        
+        position: relative;
+    }
+    &__details {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &__info {
+            flex: 1;
+
+            &__name {
+                font-family: 'kap-firma-rg';
+                font-weight: 500;
+
+                span {
+                    font-family: 'kap-firma-md';
+                    font-weight: 700;
+                }
+            }
+
+            &__location {
+                font-family: 'kap-firma-rg';
+                font-weight: 500;
+                color: #57CC99;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                span{
+                    margin-top: 1px;
+                }
+                img {
+                    padding-right: 5px;
+                }
+            }
+        }
+        .like {
+            background-color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+            // z-index: 100000;
+
+            svg {
+                width: 18px;
+                height: 20px;
+            }
+        }
+    }
+
+    .OTF{
+        position: absolute;
+        left: -6px;
+        top: 40px;
+        z-index: -1;
+    }
+}

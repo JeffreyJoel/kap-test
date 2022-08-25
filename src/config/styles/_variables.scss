@@ -1,0 +1,29 @@
+$primary_colour: #070F1C;
+$bg_colour: #FFFFFF;
+$btn_colour: #062F4B;
+$link_colour: #57CC99;
+
+@font-face {
+    font-family: "kap-firma";
+    src: url("../../props/br-firma-cufonfonts-webfont/BR\ Firma\ Bold.woff");
+};
+@font-face {
+    font-family: "kap-firma-bd";
+    src: url("../../props/br-firma-cufonfonts-webfont/BR\ Firma\ Black.woff");
+};
+@font-face {
+    font-family: "kap-firma-md";
+    src: url("../../props/br-firma-cufonfonts-webfont/BR\ Firma\ Medium.woff");
+};
+@font-face {
+    font-family: "kap-firma-lt";
+    src: url("../../props/br-firma-cufonfonts-webfont/BR\ Firma\ Extra\ Light.woff");
+};
+@font-face {
+    font-family: "kap-firma-rg";
+    src: url("../../props/br-firma-cufonfonts-webfont/BR\ Firma\ Regular.woff");
+};
+@font-face {
+    font-family: "kap-smtb";
+    src: url("../../props/script-mt-bold-font/SCRIPTBL.TTF");
+};
