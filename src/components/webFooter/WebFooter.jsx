@@ -56,9 +56,22 @@ function WebFooter() {
                         </p>
 
                     </div>
+
+                    <div className="WebFooter__main__info__section third">
+                        <div className='WebFooter__main__info__section__header'>
+                            Legal
+                        </div>
+                        <p>
+                            <Link to="/">Terms & Condition </Link>
+                        </p>
+                        <p>
+                            <Link to="/">Privacy Policy</Link>
+                        </p>
+                      
+                    </div>
                 </div>
 
-                <div className="WebFooter__main__info bottom">
+                <div className="WebFooter__main__info mobileBottom">
                     <div className="WebFooter__main__info__section">
                         <div className='WebFooter__main__info__section__header low'>
                             Legal
@@ -81,6 +94,14 @@ function WebFooter() {
                    
                     </div>
                 </div>
+
+                <div className="WebFooter__main__copyright">
+                      <p>© 2022 Kapitify Labs</p>
+                        <small>
+                        Rights Reserved.
+                        </small>
+                      </div>
+                   
             </div>
 
         </div>

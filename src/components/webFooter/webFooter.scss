@@ -1,19 +1,43 @@
 @import '../../config/styles/variables';
 
 .WebFooter {
+    background-color: #ffffff;
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+
+        &__socials {
+            display: flex;
+            justify-content: space-between;
+            width: 125px;
+        }
+    }
+
+    p,
+    a {
+        font-family: 'kap-firma-rg';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #4B4B4B;
+        text-decoration: none;
+    }
+
     @media screen and (max-width: 999px) {
         padding: 32px 0 75px;
 
         &__main {
-            display: flex;
-            flex-direction: column;
-            gap: 26px;
+            // display: flex;
+            // flex-direction: column;
+            // gap: 26px;
 
-            &__socials {
-                display: flex;
-                justify-content: space-between;
-                width: 125px;
-            }
+            // &__socials {
+            //     display: flex;
+            //     justify-content: space-between;
+            //     width: 125px;
+            // }
 
             &__info {
                 display: flex;
@@ -22,6 +46,10 @@
 
                 .right {
                     text-align: right;
+                }
+
+                .third {
+                    display: none;
                 }
 
                 &__section {
@@ -38,26 +66,16 @@
                         color: #06335B;
                     }
 
-                    p,
-                    a {
-                        font-family: 'kap-firma-rg';
-                        font-style: normal;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 18px;
-                        color: #4B4B4B;
-                    }
+
 
                 }
 
-                // &__content{
-                //   
-                // }
             }
 
-            .bottom {
+            .mobileBottom {
                 align-items: unset;
-                .low{
+
+                .low {
                     padding-top: 28px;
                 }
 
@@ -74,7 +92,47 @@
         }
 
     }
+
     @media screen and(min-width:1000px) {
-        
+        padding: 32px 0 inherit;
+        &__main {
+            gap: 27px;
+            .mobileBottom{
+                display: none;
+            }
+            &__info {
+                display: flex;
+                // align-items: center;
+                justify-content: space-between;
+                width: 70vw;
+                padding-bottom: 49px;
+                &__section{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+                  
+                    &__header {
+                        width: 80px;
+                        font-family: 'kap-firma-md';
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #06335B;
+                    }
+                }
+            }
+            &__copyright{
+                margin: auto;
+                text-align: center;
+                small {
+                    font-style: normal;
+                    font-family: 'kap-firma-md';
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #4B4B4B;
+                }
+            }
+        }
     }
 }
