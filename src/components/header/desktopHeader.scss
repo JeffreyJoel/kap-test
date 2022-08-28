@@ -1,0 +1,71 @@
+.DesktopHeader {
+    @media screen and (min-width: 1000px) {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 20;
+        background-color: #FFFFFF;
+
+        &__main {
+            display: flex;
+            justify-content: space-between;
+            // align-items: center;
+            padding: 20px 30px;
+            width: 100%;
+
+            .Search {
+                margin: 0;
+                width: 40%;
+            }
+
+            &__iconList{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                // min-width: 35%;
+                gap: 42px;
+            }
+            &__iconGrp {
+                display: flex;
+                // justify-content: space-evenly;
+               
+                align-items: center;
+                gap: 8.5px;
+               
+
+                span {
+                    font-family: 'kap-firma-rg';
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                    display: flex;
+                    align-items: flex-end;
+
+                    color: #4A4A4A;
+                }
+
+                .chatIcon {
+                    width: 20px;
+                    height: 20px;
+                }
+
+                .orderIcon {
+                    width: 20px;
+                    height: 18.283344268798828px;
+                    width: 19.724777221679688px;
+                    // height: 21px;
+                }
+
+                .avatar {
+                    width: 24px;
+                }
+
+            }
+        }
+    }
+
+    @media screen and (max-width: 999px) {
+        display: none;
+    }
+}

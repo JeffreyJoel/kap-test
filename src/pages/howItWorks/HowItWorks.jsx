@@ -2,7 +2,7 @@ import React from 'react';
 import './howItWorks.scss';
 import logo from '../../props/icons/kap-logo.svg';
 import cancel from "../../props/icons/Close_round.svg";
-import wavy from "../../props/icons/wavy.svg";
+import wavy from "../../props/icons/wavy.png";
 import image from "../../props/images/how_it_works.png";
 import curve1 from "../../props/icons/curve1.svg";
 import curve2 from "../../props/icons/curve2.svg";
@@ -13,6 +13,13 @@ import gadgets from '../../props/icons/gadgets.svg';
 import book from '../../props/icons/book.svg';
 import { useNavigate } from 'react-router';
 import WebFooter from '../../components/webFooter/WebFooter';
+import google from '../../props/icons/google_grey.svg';
+import bing from '../../props/icons/bing.png';
+import yahoo from '../../props/icons/yahoo_grey.svg';
+import duckduckgo from '../../props/icons/duckduckgo_grey.svg';
+import yandex from '../../props/icons/Yandex.png';
+import boxStack from '../../props/icons/box-stack.svg';
+import DesktopHeader from '../../components/header/DesktopHeader';
 
 // There will be some new additions to this page, and the image of the guy will change.
 
@@ -29,13 +36,11 @@ function HowItWorks() {
     return (
         <div className="HowItWorks">
             <div className="HowItWorks__header">
-                <span>
                     <img src={logo} alt="logo" loading='lazy'/>
-                </span>
-                <span>
+        
                     <img src={cancel} alt="cancel" onClick={handleBack} />
-                </span>
             </div>
+            <DesktopHeader/>
             <div className='HowItWorks__body'>
                 <div className='HowItWorks__body__top'>
                     <img src={wavy} alt="" />
@@ -50,12 +55,15 @@ function HowItWorks() {
                         </p>
                     </div>
                 </div>
+                <div className='desktopFlexRowReverse'>
                 <div className="HowItWorks__body__img">
                    <div className='BorderCorner'>
                    <img src={image}  alt="illustration" />
                    </div>
                 </div>
-                <div className="HowItWorks__body__first">
+                <div className='rectangle'></div>
+                {/* <div className="HowItWorks__body__main"> */}
+                <div className="HowItWorks__body__first bodyMargin">
                     <div className="HowItWorks__body__first__section">
                         <div className='left'>
                             <span>1.</span>
@@ -99,46 +107,76 @@ function HowItWorks() {
                            </div>
                         </div>
                     </div>
-                    <button className='HowItWorks__body__first__btn' onClick={handleJoin}>Join now</button>
-
-                    <div  className="HowItWorks__body__final__section">
+                   
+                </div>
+                </div>
+                <button className='HowItWorks__body__first__btn' onClick={handleJoin}>Join now</button>
+                <div className='boxStack bodyMargin'><img src={boxStack} alt="" /></div>
+                <div  className="HowItWorks__body__second bodyMargin">
+                    <p className='HowItWorks__body__second__title'>Swap any kind of product or item</p>
                     <div className='sections'>
-                        <div className='item first'>
+                        <div  className='HowItWorks__body__second__item first'>
                             <img src={monitor} alt="" />
                             <div>
-                                <p className='item__head'>Digital Products</p>
-                                <p className='item__text'>Swap any and every kind of digital product, from software to games and more without stress.</p>
+                                <p className='HowItWorks__body__second__item__head'>Digital Products</p>
+                                <p className='HowItWorks__body__second__item__text'>Swap any and every kind of digital product, from software to games and more without stress.</p>
                             </div>
                         </div>
 
-                        <div className='item second'>
+                        <div className='HowItWorks__body__second__item  second'>
                             <img src={book} alt="" />
                             <div>
-                                <p className='item__head'>Books</p>
-                                <p className='item__text'>Kapitify is the best platform to swap your textbooks, notes and novels.</p>
+                                <p className='HowItWorks__body__second__item__head'>Books</p>
+                                <p className='HowItWorks__body__second__item__text'>Kapitify is the best platform to swap your textbooks, notes and novels.</p>
                             </div>
                         </div>
 
-                        <div className='item third'>
+                        <div className='HowItWorks__body__second__item  third'>
                             <img src={gadgets} alt="" />
                             <div>
-                                <p className='item__head'>Gadgets</p>
-                                <p className='item__text'>Swap any kind of gadgets and electronics from smartphones, portable equipment to home appliances and more.</p>
+                                <p className='HowItWorks__body__second__item__head'>Gadgets</p>
+                                <p className='HowItWorks__body__second__item__text'>Swap any kind of gadgets and electronics from smartphones, portable equipment to home appliances and more.</p>
                             </div>
                         </div>
-                        <div className='item fourth'>
+                        <div className='HowItWorks__body__second__item  fourth'>
                             <img src={box} alt="" />
                             <div>
-                                <p className='item__head'>Physical Goods</p>
-                                <p className='item__text'>You can also use Kapitify to swap your physical product from clothing to cosmetics to vehicles to musical instruments and more.</p>
+                                <p className='HowItWorks__body__second__item__head'>Physical Goods</p>
+                                <p className='HowItWorks__body__second__item__text'>You can also use Kapitify to swap your physical product from clothing to cosmetics to vehicles to musical instruments and more.</p>
                             </div>
                         </div>
                     </div>
 
                     </div>
-                    
-                    <WebFooter/>
+
+                <div className="HowItWorks__body__third">
+                    <p className="HowItWorks__body__third__title">Everything is done for you</p>
+                    <p className="HowItWorks__body__third__body">Our advanced search engine optimization would help your items show up on Google, Bing, Yahoo, DuckDuckGo and Yandex when swappers search related keywords.</p>
+                    <div className="HowItWorks__body__third__icons">
+                        <img src={google} alt=""  className='HowItWorks__body__third__icons__google'/>
+                        <img src={bing} alt="" className='HowItWorks__body__third__icons__bing'/>
+                        <img src={yahoo} alt="" className='HowItWorks__body__third__icons__yahoo'/>
+                        <br/>
+                        <img src={duckduckgo} alt="" className='HowItWorks__body__third__icons__duckduckgo'/>
+                        <img src={yandex} alt="" className='HowItWorks__body__third__icons__yandex'/>
+                    </div>
                 </div>
+                <div className="HowItWorks__body__fourth bodyMargin">
+                    <div>
+                    <p className="HowItWorks__body__fourth__title">Start swapping with kapitify</p>
+                    <p className="HowItWorks__body__fourth__body">Create a free account in less than 5 minutes and start swapping!</p>
+                    <button className="HowItWorks__body__fourth__btn">Sign up for free</button>
+                    </div>
+                
+                </div>
+
+              
+                {/* </div> */}
+                <div className='HowItWorks__body__Footer '>
+                <WebFooter/>
+                </div>
+                
+             
             </div>
             
         </div>

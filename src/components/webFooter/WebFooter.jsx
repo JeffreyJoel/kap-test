@@ -33,8 +33,8 @@ function WebFooter() {
                         <p>
                             <Link to="/">Browse Categories</Link>
                         </p>
-                        <p>
-                            <Link to="/">Kapitify Pro</Link>
+                        <p className="pro-container">
+                            <Link to="/">Kapitify Pro  <span className='pro'>Coming Soon</span></Link>
                         </p>
                       
                     </div>

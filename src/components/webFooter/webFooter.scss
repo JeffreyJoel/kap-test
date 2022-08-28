@@ -2,10 +2,15 @@
 
 .WebFooter {
     background-color: #ffffff;
+
     &__main {
         display: flex;
         flex-direction: column;
         gap: 26px;
+
+        &__copyright {
+            display: none;
+        }
 
         &__socials {
             display: flex;
@@ -26,7 +31,7 @@
     }
 
     @media screen and (max-width: 999px) {
-        padding: 32px 0 75px;
+        padding: 32px 5vw 75px;
 
         &__main {
             // display: flex;
@@ -94,23 +99,27 @@
     }
 
     @media screen and(min-width:1000px) {
-        padding: 32px 0 inherit;
+        padding: 32px 5vw;
+
         &__main {
             gap: 27px;
-            .mobileBottom{
+
+            .mobileBottom {
                 display: none;
             }
+
             &__info {
                 display: flex;
                 // align-items: center;
                 justify-content: space-between;
                 width: 70vw;
                 padding-bottom: 49px;
-                &__section{
+
+                &__section {
                     display: flex;
                     flex-direction: column;
                     gap: 28px;
-                  
+
                     &__header {
                         width: 80px;
                         font-family: 'kap-firma-md';
@@ -119,11 +128,39 @@
                         line-height: 20px;
                         color: #06335B;
                     }
+                    .pro-container{
+                        a{
+                            display: flex;
+                            gap: 6px;
+                            align-items: center;
+                            width: fit-content;
+                        }
+                       
+                    }
+                    .pro {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 63px;
+                        height: 17.26px;
+                        background: #06335B;
+                        border-radius: 86.3014px;
+                        font-family: 'kap-firma-rg';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 6.90411px;
+                        line-height: 9px;
+                        // padding: 3px 8px 3px;
+                        color: #FFFFFF;
+                    }
                 }
             }
-            &__copyright{
+
+            &__copyright {
                 margin: auto;
                 text-align: center;
+                display: block;
+
                 small {
                     font-style: normal;
                     font-family: 'kap-firma-md';

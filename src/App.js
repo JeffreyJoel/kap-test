@@ -82,9 +82,9 @@ async function signUser() {
         <Routes>
           {/* <Route path="/" element={[< Waitlist/>]}/> */}
           {/* <Route path="new-menu" element={[<NewMenu/>]}/> */}
-          {/* <Route path="/" element={[<WaitlistHome />]}/> */}
+          
           {/* <Route path="/:referral" element={[< Waitlist/>]}/> */}
-          <Route path="/" element={[<Swap />]}/> 
+          <Route path="/" element={[<WaitlistHome />]}/> 
            <Route path="product/iphone-xr" element={[<ProductPage />]}/>
           <Route path="register" element={[<Header />, <Signup />]} />
           <Route path="login" element={[<Header />, <Login />]} />
@@ -117,6 +117,7 @@ async function signUser() {
           <Route path="no-msg" element={<NoMsg/>}/>
           <Route path="location" element={<Location/>}/>
           <Route path="how-it-works" element={<HowItWorks/>}/>
+          <Route path="waitlist-home" element={<WaitlistHome />}/>
         </Routes>
       </div>
     </Router>
