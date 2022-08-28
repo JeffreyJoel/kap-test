@@ -70,7 +70,7 @@
                 font-size: 25px;
                 line-height: 31px;
                 color: #06335B;
-                top: 7vh;
+                top: 30px;
                 margin: auto 0;
                 // left: 23%;
                 // right: auto;
@@ -281,6 +281,11 @@
                 width: 87%;
                 margin: 0 auto;
             }
+            .sections{
+                display: flex;
+            flex-direction: column;
+            gap: 33px;
+            }
 
             &__item {
                 display: flex;
@@ -404,8 +409,8 @@
             }
 
             &__body {
-                font-family: 'kap-firma-lt';
-                font-weight: 500;
+                font-family: 'kap-firma-rg';
+                font-weight: 100;
                 font-size: 14px;
                 line-height: 18px;
                 padding-bottom: 67.35px;
