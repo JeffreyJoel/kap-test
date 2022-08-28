@@ -156,7 +156,7 @@ function HowItWorks() {
                         <img src={google} alt=""  className='HowItWorks__body__third__icons__google'/>
                         <img src={bing} alt="" className='HowItWorks__body__third__icons__bing'/>
                         <img src={yahoo} alt="" className='HowItWorks__body__third__icons__yahoo'/>
-                        <br/>
+                        
                         <img src={duckduckgo} alt="" className='HowItWorks__body__third__icons__duckduckgo'/>
                         <img src={yandex} alt="" className='HowItWorks__body__third__icons__yandex'/>
                     </div>
