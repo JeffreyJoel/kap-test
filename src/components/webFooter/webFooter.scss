@@ -48,7 +48,9 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-
+                .pro {
+                    display: none;
+                }
                 .right {
                     text-align: right;
                 }
