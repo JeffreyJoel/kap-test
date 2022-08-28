@@ -14,10 +14,10 @@ import book from '../../props/icons/book.svg';
 import { useNavigate } from 'react-router';
 import WebFooter from '../../components/webFooter/WebFooter';
 import google from '../../props/icons/google_grey.svg';
-import bing from '../../props/icons/bing.png';
+import bing from '../../props/icons/bing_grey.svg';
 import yahoo from '../../props/icons/yahoo_grey.svg';
 import duckduckgo from '../../props/icons/duckduckgo_grey.svg';
-import yandex from '../../props/icons/Yandex.png';
+import yandex from '../../props/icons/Yandex_grey.svg';
 import boxStack from '../../props/icons/box-stack.svg';
 import DesktopHeader from '../../components/header/DesktopHeader';
 
