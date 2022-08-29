@@ -432,12 +432,13 @@
                 font-size: 16px;
                 line-height: 20px;
                 color: #06335B;
+                border: none;
             }
 
         }
     }
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: 1024px) {
         background: #F8F8F8;
 
         &__header {
