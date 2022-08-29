@@ -48,30 +48,8 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .pro-container{
-                    a{
-                        display: flex;
-                        gap: 6px;
-                        //align-items: center;
-                        width: fit-content;
-                    }
-                   
-                }
-                .pro {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 63px;
-                    height: 17.26px;
-                    background: #06335B;
-                    border-radius: 86.3014px;
-                    font-family: 'kap-firma-rg';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 6.90411px;
-                    // line-height: 9px;
-                    // padding: 3px 8px 3px;
-                    color: #FFFFFF;
+                .pro{
+                    display: none;
                 }
                 .right {
                     text-align: right;
@@ -138,6 +116,31 @@
                 justify-content: space-between;
                 width: 70vw;
                 padding-bottom: 49px;
+                .pro-container{
+                    a{
+                        display: flex;
+                        gap: 6px;
+                        //align-items: center;
+                        width: fit-content;
+                    }
+                   
+                }
+                .pro {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 63px;
+                    height: 17.26px;
+                    background: #06335B;
+                    border-radius: 86.3014px;
+                    font-family: 'kap-firma-rg';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 6.90411px;
+                    // line-height: 9px;
+                    // padding: 3px 8px 3px;
+                    color: #FFFFFF;
+                }
 
                 &__section {
                     display: flex;
