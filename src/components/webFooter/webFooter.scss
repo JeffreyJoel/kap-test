@@ -4,6 +4,14 @@
     background-color: #ffffff;
 
     &__main {
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
+        /* NEW - Chrome */
         display: flex;
         flex-direction: column;
         gap: 26px;
@@ -45,12 +53,22 @@
             // }
 
             &__info {
+                display: -webkit-box;
+                /* OLD - iOS 6-, Safari 3.1-6 */
+                display: -moz-box;
+                /* OLD - Firefox 19- (buggy but mostly works) */
+                display: -ms-flexbox;
+                /* TWEENER - IE 10 */
+                display: -webkit-flex;
+                /* NEW - Chrome */
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                .pro{
+
+                .pro {
                     display: none;
                 }
+
                 .right {
                     text-align: right;
                 }
@@ -60,6 +78,14 @@
                 }
 
                 &__section {
+                    display: -webkit-box;
+                    /* OLD - iOS 6-, Safari 3.1-6 */
+                    display: -moz-box;
+                    /* OLD - Firefox 19- (buggy but mostly works) */
+                    display: -ms-flexbox;
+                    /* TWEENER - IE 10 */
+                    display: -webkit-flex;
+                    /* NEW - Chrome */
                     display: flex;
                     flex-direction: column;
                     gap: 28px;
@@ -111,21 +137,47 @@
             }
 
             &__info {
+                display: -webkit-box;
+                /* OLD - iOS 6-, Safari 3.1-6 */
+                display: -moz-box;
+                /* OLD - Firefox 19- (buggy but mostly works) */
+                display: -ms-flexbox;
+                /* TWEENER - IE 10 */
+                display: -webkit-flex;
+                /* NEW - Chrome */
                 display: flex;
                 // align-items: center;
                 justify-content: space-between;
                 width: 70vw;
                 padding-bottom: 49px;
-                .pro-container{
-                    a{
+
+                .pro-container {
+                    a {
+                        display: -webkit-box;
+                        /* OLD - iOS 6-, Safari 3.1-6 */
+                        display: -moz-box;
+                        /* OLD - Firefox 19- (buggy but mostly works) */
+                        display: -ms-flexbox;
+                        /* TWEENER - IE 10 */
+                        display: -webkit-flex;
+                        /* NEW - Chrome */
                         display: flex;
                         gap: 6px;
                         //align-items: center;
                         width: fit-content;
                     }
-                   
+
                 }
+
                 .pro {
+                    display: -webkit-box;
+                    /* OLD - iOS 6-, Safari 3.1-6 */
+                    display: -moz-box;
+                    /* OLD - Firefox 19- (buggy but mostly works) */
+                    display: -ms-flexbox;
+                    /* TWEENER - IE 10 */
+                    display: -webkit-flex;
+                    /* NEW - Chrome */
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -143,6 +195,14 @@
                 }
 
                 &__section {
+                    display: -webkit-box;
+                    /* OLD - iOS 6-, Safari 3.1-6 */
+                    display: -moz-box;
+                    /* OLD - Firefox 19- (buggy but mostly works) */
+                    display: -ms-flexbox;
+                    /* TWEENER - IE 10 */
+                    display: -webkit-flex;
+                    /* NEW - Chrome */
                     display: flex;
                     flex-direction: column;
                     gap: 28px;
@@ -155,7 +215,7 @@
                         line-height: 20px;
                         color: #06335B;
                     }
-                  
+
                 }
             }
 
